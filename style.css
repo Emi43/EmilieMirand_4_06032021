@@ -38,6 +38,11 @@ a:hover {
     background-size: cover;
     position: relative;
 }
+.keywords
+{
+    color: #000000;
+    font-size: 1px;
+}
 
 .bloc .container {
     padding-left: 0;
@@ -47,7 +52,11 @@ a:hover {
 .bloc-lg {
     padding: 100px 50px;
 }
-
+.center-block
+{
+    width: 100px;
+    height: 100px;
+}
 .bloc-md {
     padding: 50px;
 }
@@ -55,7 +64,6 @@ a:hover {
 .bloc-sm {
     padding: 20px 50px;
 }
-
 .bg-center,
 .bg-l-edge,
 .bg-r-edge,
@@ -91,7 +99,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url(img/texture-paper.png);
     background-size: 280px 280px;
 }
 
@@ -100,7 +108,7 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: #000000;
 }
 
 .d-bloc button:hover {
@@ -133,7 +141,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: #000000;
 }
 
 .d-bloc .a-btn:hover,
@@ -195,7 +203,7 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0, 0, 0, .5);
+    color: #000000;
 }
 
 .d-bloc .panel button:hover,
@@ -231,7 +239,7 @@ a:hover {
 .l-bloc h5 a,
 .l-bloc h6 a,
 .l-bloc p a {
-    color: rgba(0, 0, 0, .6);
+    color: #000000;
 }
 
 .d-bloc .panel .a-btn:hover,
@@ -284,7 +292,12 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 38px;
+}
+#bloc-1-hero .col-sm-12
+{
+    background: rgba( 255,255,255,0.445);
+    padding: 20px;
 }
 
 .navbar {
@@ -293,7 +306,8 @@ a:hover {
 }
 
 .navbar-brand {
-    height: auto;
+    height: 50px;
+    width: 250px;
     padding: 3px 15px;
     font-size: 25px;
     font-weight: normal;
@@ -302,7 +316,8 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-height: 200px;
+    height: 40px;
+    width: 215px;
     margin: 0 5px 0 0;
     display: inline;
 }
@@ -651,7 +666,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #000000;
 }
 
 .container {
@@ -677,7 +692,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -692,7 +707,6 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -707,6 +721,10 @@ p {
 h2 {
     font-size: 22px;
     line-height: 1.4em;
+}
+h2.mg-md.text-center.tc-white
+{
+    color: #000000!important;
 }
 
 h3 {
@@ -728,6 +746,7 @@ h1 {
 
 h4 {
     color: #333333!important;
+    font-size: 30px;
 }
 
 .icons {
@@ -736,7 +755,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #000000;
 }
 
 .portfolio-thumb {
@@ -753,7 +772,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color:rgba( 255,255,255,0.445);
     padding: 40px 40px 40px 40px;
 }
 
@@ -769,28 +788,34 @@ h4 {
 .bgc-dark-slate-blue {
     background-color: #364577;
 }
+.bgc-dark-slate-blue h4
+{
+    background: rgba( 255,255,255,0.445);
+}
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #F3976C!important;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #000000!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #000000;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
     color: #FFFFFF!important;
 }
-
-.ltc-white {
-    color: #FFFFFF!important;
+.img-responsive
+{
+    width: 270px;
+    height: 270px;
 }
+
 
 .ltc-white:hover {
     color: #cccccc!important;
@@ -811,6 +836,7 @@ h4 {
 
 .bg-dots-bg {
     background-image: url("img/dots-bg.png");
+    background-color: transparent;
 }
 
 .bg-lines-h2-bg {
@@ -822,7 +848,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -848,13 +874,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -872,9 +898,13 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
+    .portfolio-thumb
+    {
+        margin:auto;
+    }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -884,8 +914,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
     }
 }
 
